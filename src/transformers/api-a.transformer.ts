@@ -1,6 +1,7 @@
-import { UnifiedJob } from '../typings/unified-job.typing';
+import { JobOfferA } from '@typings/job-offer-a.typing';
+import { UnifiedJob } from '@typings/unified-job.typing';
 
-export function transformAPIA(job: any): UnifiedJob {
+export function transformAPIA(job: JobOfferA): UnifiedJob {
   const [min, max] = job.details.salaryRange
     .replace(/\$/g, '')
     .replace(/k/g, '000')
