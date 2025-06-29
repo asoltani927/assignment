@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { JobsModule } from './modules/jobs/jobs.module';
 import { GlobalModule } from './global.module';
+import { JobOffersModule } from './modules/jobs-offers/job-offers.module';
 
 @Module({
-  imports: [GlobalModule, JobsModule],
+  imports: [GlobalModule, JobOffersModule],
   providers: [],
   exports: [],
 })
