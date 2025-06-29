@@ -7,7 +7,7 @@ export function transformAPIB(jobId: string, job: JobOfferB): UnifiedJob {
     : `${job.location.city}, ${job.location.state}`;
 
   return {
-    id: jobId,
+    id: jobId.toUpperCase(),
     title: job.position,
     location,
     type: 'Unknown', // چون نوع شغل مشخص نشده
@@ -18,5 +18,6 @@ export function transformAPIB(jobId: string, job: JobOfferB): UnifiedJob {
     website: job.employer.website,
     skills: job.requirements.technologies,
     postedDate: new Date(job.datePosted).toISOString(),
+    experience: job.requirements.experience,
   };
 }

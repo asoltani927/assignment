@@ -25,7 +25,7 @@ export class ShutdownService
     const tasks = [
       (async () => {
         try {
-          await this.prisma().$disconnect();
+          await this.prisma.$disconnect();
           console.log('Prisma disconnected.');
         } catch (error) {
           console.error('Error disconnecting Prisma:', error);

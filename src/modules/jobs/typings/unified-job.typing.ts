@@ -11,4 +11,6 @@ export interface UnifiedJob {
   website?: string;
   skills: string[];
   postedDate: string; // ISO format
+  experience?: number;
+  description?: string;
 }

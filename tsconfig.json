@@ -21,7 +21,8 @@
       "@assignment/prisma": ["./node_modules/.prisma"],
       "@typings/*": ["./src/typings/*"],
       "@providers/*": ["./src/providers/*"],
-      "@services/*": ["./src/services/*"]
+      "@services/*": ["./src/services/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   }
 }

@@ -15,8 +15,8 @@ datasource db {
 }
 
 model Job {
-  id         String @id @default(cuid())
-  externalId String // Unique ID from the API
+  id         Int    @id @default(autoincrement())
+  externalId String @unique // Unique ID from the API
   source     String // e.g. "API_1" or "API_2"
 
   title       String

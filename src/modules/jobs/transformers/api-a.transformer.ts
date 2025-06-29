@@ -9,7 +9,7 @@ export function transformAPIA(job: JobOfferA): UnifiedJob {
     .map((s) => parseInt(s.trim()));
 
   return {
-    id: job.jobId,
+    id: job.jobId.toUpperCase(),
     title: job.title,
     location: job.details.location,
     type: job.details.type,
