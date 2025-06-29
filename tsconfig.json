@@ -18,7 +18,10 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@typings/*": ["./src/typings/*"]
+      "@assignment/prisma": ["./node_modules/.prisma"],
+      "@typings/*": ["./src/typings/*"],
+      "@providers/*": ["./src/providers/*"],
+      "@services/*": ["./src/services/*"]
     }
   }
 }

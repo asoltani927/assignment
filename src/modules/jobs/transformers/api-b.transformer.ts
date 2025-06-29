@@ -1,5 +1,5 @@
-import { JobOfferB } from '@typings/job-offer-b.typing';
-import { UnifiedJob } from '@typings/unified-job.typing';
+import { JobOfferB } from '../typings/job-offer-b.typing';
+import { UnifiedJob } from '../typings/unified-job.typing';
 
 export function transformAPIB(jobId: string, job: JobOfferB): UnifiedJob {
   const location = job.location.remote
